@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# テスト
+test_temp/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 入出力フォルダ
+input/
+output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Whisperモデルキャッシュ
+.cache/
+
+# ログファイル
+*.log
