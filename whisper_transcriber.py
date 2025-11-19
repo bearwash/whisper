@@ -57,7 +57,7 @@ def transcribe_file(model, file_path: str, output_folder: str) -> None:
     print(f"Processing: {file_name} ...")
 
     # 文字起こし実行
-    segments, info = model.transcribe(file_path, beam_size=5, language="ja")
+    segments, info = model.transcribe(file_path, beam_size=8, language="ja",var_filter=False,initial_prompt="これは日本のゲーム動画配信者の動画の切り抜きです。正確に文字お越ししてください。")
 
     # 出力ファイルのパス
     output_path = os.path.join(output_folder, f"{base_name}.txt")
